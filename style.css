@@ -13,26 +13,40 @@
 
 /* Links */
 
-a, a:link, a:visited  {
+a,
+a:link,
+a:visited {
   text-decoration: none;
 }
 
-a:hover  {
+a:hover {
   text-decoration: none;
 }
 
 /* Common */
 
-aside, nav, footer, header, section, main {
+aside,
+nav,
+footer,
+header,
+section,
+main {
   display: block;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   font-size: inherit;
   font-weight: inherit;
 }
 
-ul, ul li {
+ul,
+ul li {
   list-style: none;
 }
 
@@ -40,7 +54,8 @@ img {
   vertical-align: top;
 }
 
-img, svg {
+img,
+svg {
   max-width: 100%;
   height: auto;
 }
@@ -51,7 +66,10 @@ address {
 
 /* Form */
 
-input, textarea, button, select {
+input,
+textarea,
+button,
+select {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -62,7 +80,8 @@ input::-ms-clear {
   display: none;
 }
 
-button, input[type="submit"] {
+button,
+input[type="submit"] {
   display: inline-block;
   box-shadow: none;
   background-color: transparent;
@@ -70,8 +89,10 @@ button, input[type="submit"] {
   cursor: pointer;
 }
 
-input:focus, input:active,
-button:focus, button:active {
+input:focus,
+input:active,
+button:focus,
+button:active {
   outline: none;
 }
 
@@ -96,8 +117,8 @@ legend {
   --soft-violet: hsl(277, 64%, 61%);
   /* NEUTRAL COLORS */
   --white: hsl(0, 0%, 100%);
-  --transparent-white:  hsla(0, 0%, 100%, 0.75);
-  --slightly-transparent-white : hsla(0, 0%, 100%, 0.6);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
 }
 
 body {
@@ -107,27 +128,67 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   /*font-family: 'Lexend Deca', sans-serif;*/
 }
 
 .container {
   background: var(--dark-desaturated-blue);
+  max-width: 20rem;
+  border-radius: 0 0 1rem 1rem;
 }
 
-.image {
+.image-overlay {
+  background-color: var(--soft-violet);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.image-overlay img {
+  mix-blend-mode: multiply;
+  opacity: 0.8;
+}
+
+.content {
+  margin: 2.5rem 2rem 2rem 2rem;
 }
 
 .heading {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   color: var(--white);
   font-weight: bold;
+  text-align: center;
+  line-height: 2rem;
 }
 
 .highlighted {
-  color: var(--soft-violet)
+  color: var(--soft-violet);
 }
 
 .paragraph {
-  color: var(--slightly-transparent-white)
+  color: var(--slightly-transparent-white);
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.statistics__count {
+  text-align: center;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.statistics__label {
+  text-align: center;
+  color: var(--slightly-transparent-white);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-family: "Lexend Deca", sans-serif;
 }

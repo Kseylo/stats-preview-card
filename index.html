@@ -14,16 +14,43 @@
   </head>
   <body>
     <main class="container">
-      <picture>
-<!--        <source media="(max-width: 70em)" srcset="assets/images/image-header-mobile.jpg"/>-->
-        <source media="(max-width: 70em)" srcset="assets/images/image-header-mobile.jpg"/>
-        <img src="assets/images/image-header-desktop.jpg"/>
-      </picture>
-      <h1 class="heading">Get <span class="highlighted">insights</span> that help your business grow.</h1>
-      <p class="paragraph">
-        Discover the benefits of data analytics and make better decisions
-        regarding revenue, customer experience, and overall efficiency.
-      </p>
+      <div class="image-overlay">
+        <picture class="image-overlay">
+          <source
+            media="(max-width: 70em)"
+            srcset="assets/images/image-header-mobile.jpg"
+          />
+          <source
+            media="(min-width: 70em)"
+            srcset="assets/images/image-header-desktop.jpg"
+          />
+          <img src="assets/images/image-header-desktop.jpg" class="image" />
+        </picture>
+      </div>
+      <div class="content">
+        <h1 class="heading">
+          Get <span class="highlighted">insights</span> that help your business
+          grow.
+        </h1>
+        <p class="paragraph">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div class="statistics">
+          <article>
+            <h2 class="statistics__count">10k+</h2>
+            <p class="statistics__label">companies</p>
+          </article>
+          <article>
+            <h2 class="statistics__count">314</h2>
+            <p class="statistics__label">templates</p>
+          </article>
+          <article>
+            <h2 class="statistics__count">12M+</h2>
+            <p class="statistics__label">queries</p>
+          </article>
+        </div>
+      </div>
     </main>
   </body>
 </html>
