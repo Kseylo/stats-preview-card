@@ -110,6 +110,25 @@ legend {
 }
 
 /* USER STYLES */
+
+/* MOBILE */
+@media screen and (max-width: 70em) {
+  .container {
+    max-width: 20rem;
+    flex-direction: column;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 70em) {
+  .container {
+    max-width: 72rem;
+    flex-direction: row-reverse;
+  }
+}
+
+/* https://www.figma.com/file/HyRv9dJrxlU7Z0rkhUN7B6/stats-preview-card-component-(Community)?node-id=0%3A22&mode=dev  */
+
 :root {
   /* PRIMARY COLORS*/
   --very-dark-blue: hsl(233, 47%, 7%);
@@ -134,18 +153,20 @@ body {
 
 .container {
   background: var(--dark-desaturated-blue);
-  max-width: 20rem;
   border-radius: 0 0 1rem 1rem;
+  display: flex;
 }
 
 .image-overlay {
   background-color: var(--soft-violet);
   border-radius: 1rem 1rem 0 0;
+  width: 100%;
 }
 
 .image-overlay img {
   mix-blend-mode: multiply;
   opacity: 0.8;
+  width: 100%;
 }
 
 .content {
