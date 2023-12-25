@@ -37,7 +37,6 @@ pnpm dev
             srcset="assets/images/image-header-mobile.jpg"
           />
           <source
-          /* Отображаем это изображение для экранов шириной от 70em(1120px) */
             media="(min-width: 70em)"
             srcset="assets/images/image-header-desktop.jpg"
           />
